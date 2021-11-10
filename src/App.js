@@ -1,14 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import data from './Data';
 
-import Scrolling_Navbar from './components/Scrolling_Navbar';
+import NavList from './components/NavList';
+import DisplayPage from './components/DisplayPage';
 
-function App() {
-  return (
-    <div className="App">
-      <Scrolling_Navbar/>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    } 
+  }
+  
+  render(){
+    return(
+      <div className="App">
+        
+        <DisplayPage/>
+        <NavList/>
+        
+      </div>
+    );
+  }    
 }
-
 export default App;

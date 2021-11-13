@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className="isVisible">{BoxOneIsVisible ? "1 IS IN VIEWPORT" : BoxTwoIsVisible ? "2 IS IN VIEWPORT" : "NONE IN VIEWPORT"}</div> 
+      <div className="isVisible">{BoxOneIsVisible ? "BOX 1 IS IN VIEWPORT" : BoxTwoIsVisible ? "BOX 2 IS IN VIEWPORT" : "NONE IN VIEWPORT"}</div> 
       <div className="section"></div>
      <div className="box" ref={box1ref}>Box1</div>
      <div className="box" ref={box2ref}>Box2</div>
